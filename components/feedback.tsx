@@ -53,11 +53,11 @@ export function Feedback({ post }: Props) {
               disabled={state.submitting}
             />
             <Input
-              labelText="(Optional) Twitter Handle"
-              id="twitter"
-              name="twitter"
-              placeholder="@twitter"
-              type="twitter"
+              labelText="(Optional) LinkedIn Profile"
+              id="linkedin"
+              name="linkedin"
+              placeholder="https://www.linkedin.com/in/your-profile"
+              type="url"
               disabled={state.submitting}
             />
           </div>
@@ -78,9 +78,9 @@ export function Feedback({ post }: Props) {
           {!state.submitting && state.errors.length > 0 && (
             <p className="mt-3 font-medium text-center text-pink-500">
               I'm having errors sending your feedback. Alternatively, you can
-              reach me out on Twitter:{' '}
-              <ExtLink link="https://twitter.com/jeffjadulco">
-                @jeffjadulco
+              reach me out on LinkedIn:{' '}
+              <ExtLink link="https://www.linkedin.com/in/talhaisik/">
+                talhaisik
               </ExtLink>
             </p>
           )}

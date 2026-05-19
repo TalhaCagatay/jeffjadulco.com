@@ -28,7 +28,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
     openGraph: {
       images: [
         {
-          url: `https://jeffjadulco.com${frontmatter.seoImage}`,
+          url: `https://talhacagatayisik.com${frontmatter.seoImage}`,
         },
       ],
     },

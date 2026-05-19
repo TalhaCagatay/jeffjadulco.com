@@ -1,9 +1,9 @@
 {
-  "name": "jeffjadulco.com",
+  "name": "talhacagatayisik.com",
   "private": true,
-  "description": "My personal website made using Next.js",
+  "description": "Portfolio website of Talha Cagatay ISIK",
   "version": "3.0.0",
-  "author": "Jeff Jadulco <hey@jeffjadulco.com>",
+  "author": "Talha Cagatay ISIK <isiktalhacagatay@gmail.com>",
   "dependencies": {
     "@formspree/react": "^2.4.1",
     "next": "^13.4.9",

@@ -1,0 +1,37 @@
+---
+title: "Tezos Unity SDK — Trilitech Experience"
+date: "2026-05-19"
+description: "Notes and experience using the trilitech/tezos-unity-sdk to integrate Tezos into Unity projects."
+tags:
+  - tezos
+  - unity
+  - blockchain
+  - trilitech
+  - sdk
+---
+
+This post is a short draft summarizing my experience using the trilitech/tezos-unity-sdk (https://github.com/trilitech/tezos-unity-sdk) while exploring Tezos integrations in Unity.
+
+## Overview
+
+The `tezos-unity-sdk` by Trilitech provides a lightweight set of utilities and wrappers to interact with Tezos blockchains from Unity projects. It includes wallet connectivity, transaction signing, and helpers for calling smart contract entry points.
+
+## What I tried
+
+- Cloned the repository and reviewed the Unity packages and example scenes.
+- Integrated the core networking and signing helpers into a small Unity test scene.
+- Used the SDK to connect to a testnet node, create and sign a simple transaction, and submit it for confirmation.
+
+## Key notes and tips
+
+- The SDK expects a Unity-compatible networking and JSON handling stack; review the example scenes to see recommended setup.
+- For development use a Tezos testnet and lightweight faucet keys to avoid risking funds.
+- Pay attention to transaction gas limits and fee estimation; test locally first.
+
+## Links
+
+- Trilitech Tezos Unity SDK: https://github.com/trilitech/tezos-unity-sdk
+
+---
+
+*This is a draft — tell me if you want a longer write-up, code snippets, or screenshots added.*

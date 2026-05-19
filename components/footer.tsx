@@ -1,14 +1,10 @@
 import { NavLink } from './atoms'
-import { GitHub24, MailAt24, Twitter24 } from './icons'
+import { GitHub24, LinkedIn24, MailAt24 } from './icons'
 
 const routes = [
   {
     path: '/',
     label: 'HOME',
-  },
-  {
-    path: '/blog',
-    label: 'BLOG',
   },
   {
     path: '/projects',
@@ -37,13 +33,13 @@ export function Footer() {
               className="self-center text-xs tracking-wider md:self-end"
               aria-label="Copyright"
             >
-              © 2020 - 2023. Jeff Jadulco. All Rights Reserved.
+              Talha Cagatay ISIK — 2026
             </span>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end">
               <span>
                 <a
-                  href="mailto:hey@jeffjadulco.com"
-                  aria-label="Email hey@jeffjadulco.com"
+                  href="mailto:isiktalhacagatay@gmail.com"
+                  aria-label="Email isiktalhacagatay@gmail.com"
                   title="Email"
                   className="focus:text-accent"
                 >
@@ -52,7 +48,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://github.com/jeffjadulco"
+                  href="https://github.com/TalhaCagatay"
                   aria-label="Visit GitHub profile"
                   title="Visit GitHub profile"
                   target="_blank"
@@ -64,14 +60,14 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://twitter.com/jeffjadulco"
-                  aria-label="Visit Twitter profile"
-                  title="Visit Twitter profile"
+                  href="https://www.linkedin.com/in/talhaisik/"
+                  aria-label="Visit LinkedIn profile"
+                  title="Visit LinkedIn profile"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="focus:text-accent"
                 >
-                  <Twitter24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
+                  <LinkedIn24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
                 </a>
               </span>
             </div>

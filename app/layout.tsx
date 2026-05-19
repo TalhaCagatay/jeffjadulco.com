@@ -19,18 +19,18 @@ const FontFiraCode = Fira_Code({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Jeff Jadulco | Game and Web Developer',
-    template: '%s | Jeff Jadulco',
+    default: 'Talha Cagatay ISIK | Game and Web Developer',
+    template: '%s | Talha Cagatay ISIK',
   },
-  description: 'Game and Web Developer',
+  description: 'Portfolio website of Talha Cagatay ISIK',
   openGraph: {
-    title: 'Jeff Jadulco',
-    description: 'Game and Web Developer',
-    url: 'https://jeffjadulco.com',
-    siteName: 'Jeff Jadulco',
+    title: 'Talha Cagatay ISIK',
+    description: 'Portfolio website of Talha Cagatay ISIK',
+    url: 'https://talhacagatayisik.com',
+    siteName: 'Talha Cagatay ISIK',
     images: [
       {
-        url: 'https://jeffjadulco.com/static/og/default.png',
+        url: 'https://talhacagatayisik.com/static/og/default.png',
         width: 1280,
         height: 675,
       },
@@ -47,12 +47,13 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    creator: '@jeffjadulco',
-    title: 'Jeff Jadulco',
     card: 'summary_large_image',
   },
   icons: {
-    shortcut: '/static/favicon.ico',
+    icon: '/static/favicon/favicon-96x96.png',
+    shortcut: '/static/favicon/favicon.ico',
+    apple: '/static/favicon/apple-touch-icon.png',
+    other: [{ rel: 'manifest', url: '/static/favicon/site.webmanifest' }],
   },
 }
 export default function RootLayout({
@@ -61,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
         className={`${FontInter.variable} ${FontFiraCode.variable} font-sans flex flex-col min-h-screen relative`}
       >

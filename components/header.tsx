@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import avatar from '../public/images/the-avatar.png'
+import avatar from '../public/images/the-avatar.jpg'
 import { NavLink } from './atoms'
 import { ThemeToggle } from './themeToggle'
 
@@ -12,10 +12,6 @@ const routes = [
     path: '/',
     label: 'HOME',
     exact: true,
-  },
-  {
-    path: '/blog',
-    label: 'BLOG',
   },
   {
     path: '/projects',
@@ -41,18 +37,18 @@ export function Header() {
           className="flex items-center border-white group "
         >
           <div>
-            <div className="overflow-hidden transition-transform ease-in-out border-2 rounded-full w-9 h-9 group-hover:-translate-y-1">
+            <div className="relative overflow-hidden transition-transform ease-in-out rounded-full w-10 h-10 group-hover:-translate-y-1">
               <Image
                 src={avatar}
                 alt="My avatar"
-                width={36}
-                height={36}
+                fill
+                className="object-cover object-center"
                 priority={true}
               />
             </div>
             <div className="inline ml-3 text-base font-semibold sm:hidden">
               <span className="group-hover:text-accent text-fore-subtle">
-                jeffjadulco
+                talhacagatayisik
               </span>
               <span className="text-accent">.com</span>
             </div>

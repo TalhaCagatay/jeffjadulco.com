@@ -7,9 +7,89 @@ import { getProjects } from '../../lib/notion'
 
 import type { Project } from '../../types/project'
 
+type FeaturedProject = Project & {
+  videoLink: string
+}
+
 export const metadata: Metadata = {
   title: 'Projects',
 }
+
+const featuredProjects: FeaturedProject[] = [
+  {
+    id: 'pocketchamps',
+    title: 'Pocket Champs',
+    description:
+      'Led the automation team for this game. Mainly focued on automating build, testing, and release processes, and improving development efficiency.',
+    link: 'https://play.google.com/store/apps/details?id=com.pocketchamps.game',
+    type: 'Game',
+    year: '2024',
+    tags: ['Mobile', 'Racing', 'Multiplayer'],
+    videoLink: 'https://www.youtube.com/embed/eeHfqVh77IE',
+  },
+  {
+    id: 'ballbrawl',
+    title: 'Ball Brawl 3D - Football Cup',
+    description:
+      'Developed gameplay systems, UI features and analytics integrations.',
+    link: 'https://play.google.com/store/apps/details?id=com.hyper.ballbrawl',
+    type: 'Game',
+    year: '2018',
+    tags: ['Mobile', 'Racing', 'Multiplayer'],
+    videoLink: '',
+  },
+  {
+    id: 'matchingham',
+    title: 'Matchingham',
+    description: 'A mobile match-3 puzzle game available on Google Play.',
+    link: 'https://play.google.com/store/apps/details?id=com.Focus.Matchingham',
+    type: 'Game',
+    year: '2026',
+    tags: ['Unity', 'Mobile', 'Puzzle'],
+    videoLink: 'https://www.youtube.com/embed/ehioILYVDTQ',
+  },
+  {
+    id: 'colorsort',
+    title: 'Color Sort',
+    description: 'A shader graph water liquid color sorting game built in Unity.',
+    link: 'https://youtu.be/WNegfREsxCM',
+    type: 'Game',
+    year: '2026',
+    tags: ['Unity', 'Shader Graph', 'Puzzle'],
+    videoLink: 'https://www.youtube.com/embed/WNegfREsxCM',
+  },
+  {
+    id: 'dogsout3d',
+    title: 'Dogs Out 3D',
+    description: 'A hypercasual gate runner game.',
+    link: 'https://youtu.be/nNI8qWBXFFA',
+    type: 'Game',
+    year: '2022',
+    tags: ['Unity', 'Hypercasual', 'Runner'],
+    videoLink: 'https://www.youtube.com/embed/nNI8qWBXFFA',
+  },
+  {
+    id: 'catchandfight',
+    title: 'Catch and Fight',
+    description: 'Multiplier Gate based hypercasual strategy game.',
+    link: 'https://youtu.be/rHlZZ3VgELc',
+    type: 'Game',
+    year: '2022',
+    tags: ['Unity', 'Hypercasual', 'Strategy'],
+    videoLink: 'https://www.youtube.com/embed/rHlZZ3VgELc',
+  },
+  {
+    id: 'hypermatch',
+    title: 'HyperMatch',
+    description: '3D match puzzle game on a conveyor.',
+    link: 'https://youtu.be/7ghzNdqmnP0',
+    type: 'Game',
+    year: '2019',
+    tags: ['Unity', '3D', 'Puzzle'],
+    videoLink: 'https://www.youtube.com/embed/7ghzNdqmnP0',
+  },
+  
+]
 
 export default async function Projects() {
   const projects = (await getProjects()) || []
@@ -22,6 +102,58 @@ export default async function Projects() {
       <p className="max-w-sm mb-12 text-fore-subtle">
         Web development side projects and games
       </p>
+      <section className="mb-12">
+        <div className="grid gap-6">
+          {featuredProjects.map(project => (
+            <div
+              key={project.id}
+              className="p-6 rounded-3xl bg-back-secondary border border-back-subtle"
+            >
+              <div className="flex flex-col justify-between h-full">
+                <div>
+                  <h2 className="text-2xl font-semibold text-fore-primary">
+                    {project.title}
+                  </h2>
+                  <p className="mt-2 text-fore-subtle">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {project.tags?.map(tag => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 text-xs rounded-sm bg-back-subtle text-fore-subtle"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-4 text-sm text-fore-secondary">
+                    {project.link.includes('play.google.com') && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-accent"
+                      >
+                        View on Google Play
+                      </a>
+                    )}
+                  </div>
+                </div>
+                {project.videoLink ? (
+                  <div className="mt-6 overflow-hidden rounded-3xl border border-back-subtle">
+                    <iframe
+                      src={project.videoLink}
+                      title={project.title}
+                      className="w-full min-h-[300px]"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="mb-6">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:-mx-6 justify-items-start md:grid-cols-3 lg:grid-cols-4">
           {projects.map(project => {

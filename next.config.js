@@ -33,7 +33,7 @@ module.exports = {
     return [
       {
         source: '/gamedev',
-        destination: 'https://gamedev.jeffjadulco.com',
+        destination: 'https://talhacagatayisik.com',
         permanent: false,
       },
     ]
@@ -45,7 +45,9 @@ const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' https://gc.zgo.at http://gc.zgo.at;
   style-src 'self' 'unsafe-inline';
-  img-src * blob: data: https://jeffjadulco.goatcounter.com/count;
+  img-src * blob: data: https://talhacagatayisik.com/count;
+  frame-src https://www.youtube.com https://www.youtube-nocookie.com https://drive.google.com;
+  child-src https://www.youtube.com https://www.youtube-nocookie.com https://drive.google.com;
   media-src 'none';
   connect-src *;
   font-src 'self';

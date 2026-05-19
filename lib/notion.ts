@@ -3,11 +3,17 @@ import type { Project } from '../types/project'
 import type { NotionDoingNow } from '../types/rich-presence'
 import * as helper from './notion-helper'
 
-const notion = new Client({ auth: process.env.NOTION_KEY })
+const notion = process.env.NOTION_KEY
+  ? new Client({ auth: process.env.NOTION_KEY })
+  : undefined
 const dbid_now = process.env.NOTION_NOW_DB_ID || ''
 const dbid_projects = process.env.NOTION_PROJECTS_DB_ID || ''
 
 export async function getDoingNow() {
+  if (!notion || !dbid_now) {
+    return undefined
+  }
+
   try {
     const { results } = await notion.databases.query({
       database_id: dbid_now,
@@ -32,6 +38,10 @@ export async function getDoingNow() {
 }
 
 export async function getProjects() {
+  if (!notion || !dbid_projects) {
+    return []
+  }
+
   try {
     const { results } = await notion.databases.query({
       database_id: dbid_projects,

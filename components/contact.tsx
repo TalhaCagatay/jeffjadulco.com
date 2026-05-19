@@ -20,12 +20,18 @@ export function Contact() {
         </p>
         <p className="px-4 mt-1 text-center text-fore-secondary">
           You can also reach me around the web:{' '}
-          <ExtLink link="https://github.com/jeffjadulco">GitHub</ExtLink>,{' '}
-          <ExtLink link="https://twitter.com/jeffjadulco">Twitter</ExtLink>
+          <ExtLink link="https://github.com/TalhaCagatay">GitHub</ExtLink>,{' '}
+          <ExtLink link="https://stackoverflow.com/users/10180227/talha-cagatay-isik">
+            Stack Overflow
+          </ExtLink>{' '}
+          and{' '}
+          <ExtLink link="https://www.linkedin.com/in/talhaisik/">
+            LinkedIn
+          </ExtLink>
         </p>
         <div className="flex justify-center pt-10 pb-2 mx-auto">
           <Button
-            link="mailto:hey@jeffjadulco.com"
+            link="mailto:isiktalhacagatay@gmail.com"
             onClick={() => {
               trackCustomEvent({ eventName: 'click-contact' })
             }}

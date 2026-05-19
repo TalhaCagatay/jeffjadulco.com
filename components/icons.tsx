@@ -105,6 +105,26 @@ export const GitHub24 = ({ className }: IconProps) => {
   )
 }
 
+export const LinkedIn24 = ({ className }: IconProps) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={classNames('w-6 h-6', className)}
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+      role="img"
+    >
+      <title>LinkedIn</title>
+      <path stroke="none" d="M0 0h24v24H0z"></path>
+      <path d="M6 9H3v12h3V9zm-1.5-4.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm16.5 4.5h-3v-2.4c0-.8-.3-1.4-1.1-1.4-.6 0-1 .4-1.2.8-.1.2-.1.5-.1.7V15h-3s.1-8 0-8h3v1.1c.4-.7 1-1.8 2.5-1.8 1.8 0 3.2 1.2 3.2 3.8V15z"></path>
+    </svg>
+  )
+}
+
 export const Spotify16 = () => {
   return (
     <svg

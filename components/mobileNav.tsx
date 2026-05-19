@@ -13,10 +13,6 @@ const routes = [
     exact: true,
   },
   {
-    path: '/blog',
-    label: 'BLOG',
-  },
-  {
     path: '/projects',
     label: 'PROJECTS',
   },

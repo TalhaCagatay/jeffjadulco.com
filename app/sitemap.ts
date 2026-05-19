@@ -32,7 +32,7 @@ const prettier = require('prettier')
         .replace('/index', '')
       return `
                         <url>
-                            <loc>${`https://jeffjadulco.com${path}`}</loc>
+                            <loc>${`https://talhacagatayisik.com${path}`}</loc>
                             <changefreq>${
         path.includes('/blog') ? 'monthly' : 'daily'
       }</changefreq>

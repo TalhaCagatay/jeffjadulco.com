@@ -1,15 +1,11 @@
 'use client'
 
 import { Fragment } from 'react'
-import { Blob } from '../components/atoms'
 
 export default function Error() {
   return (
     <Fragment>
       <div className="flex justify-center">
-        <div className="absolute">
-          <Blob />
-        </div>
         <h1 className="mx-auto mt-16 text-6xl font-bold text-center md:mt-20 lg:mt-24 text-back-primary">
           404
         </h1>
