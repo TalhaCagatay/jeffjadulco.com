@@ -46,12 +46,6 @@ export function Header() {
                 priority={true}
               />
             </div>
-            <div className="inline ml-3 text-base font-semibold sm:hidden">
-              <span className="group-hover:text-accent text-fore-subtle">
-                talhacagatayisik
-              </span>
-              <span className="text-accent">.com</span>
-            </div>
           </div>
         </Link>
         <div className="items-center flex-grow hidden space-x-6 sm:flex">
