@@ -102,9 +102,4 @@
     width: 100vw;
     margin-left: calc(-50vw + 50%);
   }
-
-  .noise-bg {
-    background-image: url("/images/noisy.png");
-    /*background-color: aqua;*/
-  }
 }

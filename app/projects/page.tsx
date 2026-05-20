@@ -24,7 +24,7 @@ const featuredProjects: FeaturedProject[] = [
     link: 'https://play.google.com/store/apps/details?id=com.pocketchamps.game',
     type: 'Game',
     year: '2024',
-    tags: ['Mobile', 'Racing', 'Multiplayer'],
+    tags: ['Unity', 'Mobile', 'Racing', 'Multiplayer'],
     videoLink: 'https://www.youtube.com/embed/eeHfqVh77IE',
   },
   {
@@ -35,7 +35,7 @@ const featuredProjects: FeaturedProject[] = [
     link: 'https://play.google.com/store/apps/details?id=com.hyper.ballbrawl',
     type: 'Game',
     year: '2018',
-    tags: ['Mobile', 'Racing', 'Multiplayer'],
+    tags: ['Unity', 'Mobile', 'Sports'],
     videoLink: '',
   },
   {
@@ -65,7 +65,7 @@ const featuredProjects: FeaturedProject[] = [
     link: 'https://youtu.be/nNI8qWBXFFA',
     type: 'Game',
     year: '2022',
-    tags: ['Unity', 'Hypercasual', 'Runner'],
+    tags: ['Unity', 'Mobile', 'Hypercasual', 'Runner'],
     videoLink: 'https://www.youtube.com/embed/nNI8qWBXFFA',
   },
   {
@@ -75,7 +75,7 @@ const featuredProjects: FeaturedProject[] = [
     link: 'https://youtu.be/rHlZZ3VgELc',
     type: 'Game',
     year: '2022',
-    tags: ['Unity', 'Hypercasual', 'Strategy'],
+    tags: ['Unity', 'Mobile', 'Hypercasual', 'Strategy'],
     videoLink: 'https://www.youtube.com/embed/rHlZZ3VgELc',
   },
   {
@@ -88,6 +88,26 @@ const featuredProjects: FeaturedProject[] = [
     tags: ['Unity', '3D', 'Puzzle'],
     videoLink: 'https://www.youtube.com/embed/7ghzNdqmnP0',
   },
+  {
+    id: 'mergeup',
+    title: 'Merge Up',
+    description: '2D merge puzzle game.',
+    link: 'https://youtu.be/c51-FPs0cxg',
+    type: 'Game',
+    year: '2018',
+    tags: ['Unity', '2D', 'Merge', 'Puzzle'],
+    videoLink: 'https://www.youtube.com/embed/c51-FPs0cxg',
+  },
+  {
+    id: 'spaceinvaders',
+    title: 'Space Invaders',
+    description: 'Space Invaders case study I made for masomo games around 2018 with cocos2d-x.',
+    link: 'https://youtu.be/e-GZno-Cc8Q',
+    type: 'Game',
+    year: '2018',
+    tags: ['Cocos2d-x', 'C++', '2D', 'Arcade', 'Shooter'],
+    videoLink: 'https://www.youtube.com/embed/e-GZno-Cc8Q',
+  },
   
 ]
 
@@ -99,8 +119,8 @@ export default async function Projects() {
         <Project24 />
       </span>
       <h1 className="mt-3 mb-2 text-2xl font-bold text-accent">Projects</h1>
-      <p className="max-w-sm mb-12 text-fore-subtle">
-        Web development side projects and games
+      <p className="mb-12 text-fore-subtle">
+        Some of my portfolio which includes both personal and commercial projects.
       </p>
       <section className="mb-12">
         <div className="grid gap-6">
