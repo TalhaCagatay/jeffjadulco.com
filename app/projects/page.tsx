@@ -49,6 +49,16 @@ const featuredProjects: FeaturedProject[] = [
     videoLink: 'https://www.youtube.com/embed/ehioILYVDTQ',
   },
   {
+    id: 'infiniterunner',
+    title: 'Infinite Runner - ADHD',
+    description: 'Infinite runner game aimed to improve ADHD symptoms.',
+    link: 'https://youtu.be/N1rLWApNPig',
+    type: 'Game',
+    year: '2024',
+    tags: ['Unity', 'Mobile', 'Infinite Runner', 'Health'],
+    videoLink: 'https://www.youtube.com/embed/N1rLWApNPig',
+  },
+  {
     id: 'colorsort',
     title: 'Color Sort',
     description: 'A shader graph water liquid color sorting game built in Unity.',
@@ -120,7 +130,7 @@ export default async function Projects() {
       </span>
       <h1 className="mt-3 mb-2 text-2xl font-bold text-accent">Projects</h1>
       <p className="mb-12 text-fore-subtle">
-        Some of my portfolio which includes both personal and commercial projects.
+        Some of my gaming portfolio which includes both personal and commercial projects.
       </p>
       <section className="mb-12">
         <div className="grid gap-6">
