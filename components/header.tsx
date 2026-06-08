@@ -9,11 +9,6 @@ import { ThemeToggle } from './themeToggle'
 
 const routes = [
   {
-    path: '/',
-    label: 'HOME',
-    exact: true,
-  },
-  {
     path: '/projects',
     label: 'PROJECTS',
   },
@@ -32,8 +27,8 @@ export function Header() {
         aria-label="Main Navigation"
       >
         <Link
-          href="/"
-          aria-label="Website logo, go back to homepage."
+          href="/projects"
+          aria-label="Website logo, go to projects."
           className="flex items-center border-white group "
         >
           <div>
@@ -54,11 +49,7 @@ export function Header() {
               key={route.path}
               to={route.path}
               title={route.label}
-              selected={
-                route.exact === true
-                  ? route.path === path
-                  : path.startsWith(route.path)
-              }
+              selected={path.startsWith(route.path)}
             />
           ))}
         </div>

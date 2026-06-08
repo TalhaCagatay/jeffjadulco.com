@@ -3,10 +3,6 @@ import { GitHub24, LinkedIn24, MailAt24 } from './icons'
 
 const routes = [
   {
-    path: '/',
-    label: 'HOME',
-  },
-  {
     path: '/projects',
     label: 'PROJECTS',
   },

@@ -8,11 +8,6 @@ import { ThemeToggle } from './themeToggle'
 
 const routes = [
   {
-    path: '/',
-    label: 'HOME',
-    exact: true,
-  },
-  {
     path: '/projects',
     label: 'PROJECTS',
   },
@@ -94,11 +89,7 @@ export function MobileNav() {
                 key={route.path}
                 to={route.path}
                 title={route.label}
-                selected={
-                  route.exact === true
-                    ? route.path === path
-                    : path.startsWith(route.path)
-                }
+                selected={path.startsWith(route.path)}
                 hide={() => setNavShow(false)}
               />
             ))}
