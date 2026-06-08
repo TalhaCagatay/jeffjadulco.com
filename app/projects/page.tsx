@@ -59,6 +59,16 @@ const featuredProjects: FeaturedProject[] = [
     videoLink: 'https://www.youtube.com/embed/N1rLWApNPig',
   },
   {
+    id: 'carcare3d',
+    title: 'Car Care 3D',
+    description: 'A car repair simulation game.',
+    link: 'https://youtu.be/rWcYnsefoSw',
+    type: 'Game',
+    year: '2022',
+    tags: ['Unity', 'Mobile', 'Simulation'],
+    videoLink: 'https://www.youtube.com/embed/rWcYnsefoSw',
+  },
+  {
     id: 'colorsort',
     title: 'Color Sort',
     description: 'A shader graph water liquid color sorting game built in Unity.',
